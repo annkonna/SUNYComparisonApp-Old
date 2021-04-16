@@ -1,0 +1,17 @@
+<html>
+<head></head>
+<body>
+<h1>Testing map.js</h1>
+<p>Add console.log calls in the script tag of this HTML file, open it in a browser, and look in Console window to see test output.</p>
+<p>In Microsoft Edge Browser, Console window can be accessed by Right-Clicking, choosing View Source, and then choosing Console tab.</p>
+<script src="map.js"></script>
+<script>
+var jss = JSON.stringify(
+	[[43.0008278, -78.7888641, "STATE UNIVERSITY OF NEW YORK AT BUFFALO"], 
+	[42.6907845, -73.8232956, "STATE UNIVERSITY OF NEW YORK AT ALBANY"], 
+	[42.0898132, -75.9698486, "STATE UNIVERSITY OF NEW YORK AT BINGHAMTON"], 
+	[40.9181595, -73.1226883, "STATE UNIVERSITY OF NEW YORK AT STONY BROOK"]]);
+console.log(JSON.stringify(getMapParams(jss)));
+</script>
+</body>
+</html>

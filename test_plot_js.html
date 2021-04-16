@@ -1,0 +1,35 @@
+<html>
+<head></head>
+<body>
+<h1>Testing plot.js</h1>
+<p>Add console.log calls in the script tag of this HTML file, open it in a browser, and look in Console window to see test output.</p>
+<p>In Microsoft Edge Browser, Console window can be accessed by Right-Clicking, choosing View Source, and then choosing Console tab.</p>
+<script src="plot.js"></script>
+<script>
+var jss = JSON.stringify(
+	[["Albany", 2017, 55.89], ["Albany", 2016, 56.45], ["Albany", 2015, 58.97],
+	 ["Albany", 2014, 54.4], ["Albany", 2013, 55.4], ["Albany", 2012, 53.0], 
+	 ["Albany", 2011, 52.2], ["Albany", 2010, 55.0], ["Albany", 2009, 53.2], 
+	 ["Albany", 2008, 51.4], ["Albany", 2007, 50.2], ["Albany", 2006, 51.0], 
+	 ["Binghamton", 2017, 71.79], ["Binghamton", 2016, 70.15], 
+	 ["Binghamton", 2015, 68.16], ["Binghamton", 2014, 66.6], 
+	 ["Binghamton", 2013, 66.2], ["Binghamton", 2012, 66.1], 
+	 ["Binghamton", 2011, 65.3], ["Binghamton", 2010, 65.6], 
+	 ["Binghamton", 2009, 68.3], ["Binghamton", 2008, 66.2], 
+	 ["Binghamton", 2007, 62.3], ["Binghamton", 2006, 65.2], 
+	 ["Buffalo Univ", 2017, 53.44], ["Buffalo Univ", 2016, 53.56], 
+	 ["Buffalo Univ", 2015, 49.97], ["Buffalo Univ", 2014, 46.8], 
+	 ["Buffalo Univ", 2013, 45.3], ["Buffalo Univ", 2012, 45.8], 
+	 ["Buffalo Univ", 2011, 44.1], ["Buffalo Univ", 2010, 43.4], 
+	 ["Buffalo Univ", 2009, 42.0], ["Buffalo Univ", 2008, 40.2], 
+	 ["Buffalo Univ", 2007, 39.0], ["Buffalo Univ", 2006, 35.9], 
+	 ["Stony Brook", 2017, 52.74], ["Stony Brook", 2016, 51.59], 
+	 ["Stony Brook", 2015, 47.41], ["Stony Brook", 2014, 47.5], 
+	 ["Stony Brook", 2013, 45.0], ["Stony Brook", 2012, 47.2], 
+	 ["Stony Brook", 2011, 44.3], ["Stony Brook", 2010, 42.9], 
+	 ["Stony Brook", 2009, 42.8], ["Stony Brook", 2008, 38.5], 
+	 ["Stony Brook", 2007, 39.1], ["Stony Brook", 2006, 37.5]]);
+console.log(JSON.stringify(getPlotParams(jss)));
+</script>
+</body>
+</html>
